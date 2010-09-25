@@ -3,7 +3,7 @@
     "author": "Aaron Blohowiak <aaron.blohowiak@gmail.com>",
     "description": "Twilio API bindings for Node",
     "keywords": ["twilio", "sms", "api"],
-    "version": "0.0.0",
+    "version": "0.0.1",
     "homepage": "http://github.com/aaronblohowiak/Twilio-Node",
     "repository" : { 
       "type" : "git",

@@ -2,6 +2,33 @@
 
 Supports using Twilio API in Node.JS projects.
 
+## Example
+
+### Code
+
+      var greeting = "Enter something, or not";
+      var path = "/process_gather.php?Digits=TIMEOUT";
+  
+      var str = Response(function(xml){
+        xml.gather({action: "/process_gather.php", method:"GET"}, function(xml){
+          xml.say(greeting);
+        });
+    
+        xml.redirect({method:"GET"}, path);
+      })
+
+### Produces
+
+      <?xml version="1.0" encoding="UTF-8"?>
+      <Response>
+          <Gather action="/process_gather.php" method="GET">
+              <Say>Enter something, or not</Say>
+          </Gather>
+          <Redirect method="GET">
+              /process_gather.php?Digits=TIMEOUT
+          </Redirect>
+      </Response>
+
 ### Why?
 I wrote this because http://github.com/guille/node.twilio.js did not work with the latest node and required restler, which contains GPL software.
 
