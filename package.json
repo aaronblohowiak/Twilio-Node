@@ -11,8 +11,11 @@
     },
     
     "dependencies": {
-      "libxmljs":"0.4.1"
-    }
+      "libxmljs":"0.4.1",
+      "restler.aaronblohowiak":"0.0.1"
+    },
+
+    "main": "./index.js"
     
 }
 
